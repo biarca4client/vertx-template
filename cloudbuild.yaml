@@ -1,4 +1,4 @@
-# cloudbuild.yaml with postgres and sourceclear integration
+# cloudbuild.yaml with postgres and sourceclear integration 
 secrets:
 - kmsKeyName: projects/cicd-183109/locations/global/keyRings/srcclr_api_token_keyring/cryptoKeys/srcclr_api_token_key
   secretEnv:
