@@ -10,7 +10,7 @@ steps:
   args: ['-c', 'chmod 755 ./vertex-container-build-with-postgres-sclr.sh; ./vertex-container-build-with-postgres-sclr.sh']
   secretEnv: ['SRCCLR_API_TOKEN']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ["build", "-t", "gcr.io/$PROJECT_ID/vertx-template:$REVISION_ID", "-t", "gcr.io/$PROJECT_ID/vertx-template:latest", "."]
+  args: ["build", "-t", "gcr.io/$PROJECT_ID/vertx-template-postgres:$REVISION_ID", "-t", "gcr.io/$PROJECT_ID/vertx-template-postgres:latest", "."]
 images:
   - 'gcr.io/$PROJECT_ID/vertx-template-postgres:$REVISION_ID'
   - 'gcr.io/$PROJECT_ID/vertx-template-postgres:latest'
